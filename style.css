@@ -1,0 +1,141 @@
+#oiseau {
+ position: absolute;
+ width: 40px;
+ height: 30px;
+background-image: url('image/image.PNG');
+z-index: 10;
+top: 50%;
+left: 50%;
+ }
+
+#murs {
+    text-align: center;
+}
+
+body {
+     margin: 0;
+ font-family: Arial, sans-serif;
+ background: #87ceeb;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ }
+h1 {
+     text-align: center;
+}
+
+ #game {
+ position: relative;
+ width: 400px;
+ height: 565px;
+ background: linear-gradient(#87ceeb, #cfefff);
+ border: 3px solid #333;
+ overflow: hidden;
+ }
+
+.pipe {
+    position: absolute;
+    left: -100px;
+    width: 52px;
+    height: 100%;
+    z-index: 10;
+    -webkit-animation: animPipe 7500ms linear;
+    animation: animPipe 7500ms linear;
+}
+
+.pipe_upper {
+    position: absolute;
+    top: 0;
+    width: 52px;
+    background-image: url('image/pipe.png');
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.pipe_upper:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 52px;
+    height: 26px;
+    background-image: url('image/pipe-down.png');
+}
+
+.pipe_lower {
+    position: absolute;
+    bottom: 0;
+    width: 52px;
+    background-image: url('image/pipe.png');
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.pipe_lower:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 26px;
+    background-image: url('image/pipe-up.png');
+}
+
+ #game-over {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: rgba(0, 0, 0, 0.8);
+ color: white;
+ padding: 20px;
+ border-radius: 10px;
+ text-align: center;
+ }
+
+ #score {
+ position: absolute;
+ top: 10px;
+ left: 10px;
+ font-size: 22px;
+ font-weight: bold;
+ color: white;
+ text-shadow: 1px 1px 2px black;
+ }
+
+  .hidden {
+ display: none;
+}
+
+#replay {
+ position: relative;
+ z-index: 10;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 150px;
+ height: 100px;
+ cursor: pointer;
+ display: none;
+
+}
+
+#bonus {
+ position: absolute;
+ width: 50px;
+ height: 50px;
+ background-image: url('image/bonus-bouclier.jpg');
+ background-size: cover;
+ z-index: 20;
+ display: none;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('image/niveau fond.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  z-index: 0;
+}

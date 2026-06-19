@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Flapy birdx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mini Flappy Bird</h1>
+    <div id="game">
+        <img src="image/image.PNG" id="oiseau">
+        <div id="score">Score : 0</div>
+        <div id="game-over" class="hidden">Game Over - Appuie sur R pour recommencer</div>
+        <img src="image/replay.png" id="replay" alt="replay">
+        <img src="image/bonus-bouclier.jpg" id="bonus" alt="bonus bouclier">
+        <div id="background"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="Flappy.js"></script>
+    <script src="background.js"></script>
+    <script src="multiplayer.js"></script>
+</body>
+</html>
